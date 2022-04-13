@@ -1,5 +1,6 @@
 module "network" {
-  source  = "app.terraform.io/rajragibm/terraform-google-network"
+  
+  source  = "app.terraform.io/MegHackers/network/google"
   version = "3.4.0"
   network_name = "rr-network"
   project_id = var.project
