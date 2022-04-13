@@ -1,14 +1,13 @@
 module "network" {
-  source  = "terraform-google-modules/network/google"
+  source  = "app.terraform.io/rajragibm/terraform-google-network"
   version = "3.4.0"
   network_name = "rr-network"
   project_id = var.project
   subnets = [
-  {
-    subnet_name   = "rr-subnet"
-    subnet_ip     = "10.100.10.0/24"
-    subnet_region = var.region
-  }
-]
-
+   {
+      subnet_name   = "rr-subnet"
+      subnet_ip     = "10.100.10.0/24"
+      subnet_region = var.region
+    }
+  ]
 }
