@@ -1,6 +1,6 @@
 module "network" {
   source  = "terraform-google-modules/network/google"
-  version = "5.0.0"
+  version = "3.4.0"
   network_name = "rr-network"
   project_id = var.project
   subnets = [
